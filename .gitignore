@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+secrets.py
+events_or1.jsonl
+node_modules/

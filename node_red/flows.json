@@ -1,0 +1,1861 @@
+[
+    {
+        "id": "0f863836bc16a92a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "314507449e0483eb",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "25d3f42b6b0a8dca",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "fdcea0ffa9194c398ce3ab00118df34f.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "7e4f4177a6fe6ce1",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9993c5289ce9cfa1",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "c6bd8869ae685e67",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "c2084ea53847c726",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "9993c5289ce9cfa1",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "c6bd8869ae685e67",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "aefd102924566e2a",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "c2084ea53847c726",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "488313863518a205",
+        "type": "ui-group",
+        "name": "Group 2",
+        "page": "c2084ea53847c726",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "305355ac9e206cf0",
+        "type": "ui-group",
+        "name": "Group 3",
+        "page": "c2084ea53847c726",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "8c2299cc30abccef",
+        "type": "ui-group",
+        "name": "Group 4",
+        "page": "c2084ea53847c726",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2c11081a4dd36c14",
+        "type": "ui-group",
+        "name": "Group 5",
+        "page": "c2084ea53847c726",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "7e4f4177a6fe6ce1",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "c002e78067493a06",
+        "type": "mqtt in",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "topic": "hospital/operatingroom1/#",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "25d3f42b6b0a8dca",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8726f3c523630e70",
+        "type": "debug",
+        "z": "0f863836bc16a92a",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9bbb9119e07aeb48",
+        "type": "ui-gauge",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "group": "aefd102924566e2a",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperature ",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "50 ",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 850,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba2351cc8e0346ec",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 320,
+        "wires": [
+            [
+                "9bbb9119e07aeb48",
+                "7295f9fd8f4d7c0b",
+                "8ca3a8e1cf0649dc",
+                "30d95a2365b3f2cb"
+            ]
+        ]
+    },
+    {
+        "id": "305bb1f30ee35bce",
+        "type": "mqtt in",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "topic": "hospital/operatingroom1/temperature",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "25d3f42b6b0a8dca",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 320,
+        "wires": [
+            [
+                "ba2351cc8e0346ec"
+            ]
+        ]
+    },
+    {
+        "id": "7295f9fd8f4d7c0b",
+        "type": "function",
+        "z": "0f863836bc16a92a",
+        "name": "function 1",
+        "func": "msg.temp = msg.payload;\nmsg.payload = (msg.payload > 25);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 400,
+        "wires": [
+            [
+                "5b2f4969b729dcd0"
+            ]
+        ]
+    },
+    {
+        "id": "5b2f4969b729dcd0",
+        "type": "rbe",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 710,
+        "y": 400,
+        "wires": [
+            [
+                "b8d071d24a48ba4e"
+            ]
+        ]
+    },
+    {
+        "id": "b8d071d24a48ba4e",
+        "type": "switch",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 370,
+        "y": 480,
+        "wires": [
+            [
+                "b1e90b23973f2f0e"
+            ],
+            [
+                "44fede8f9782ae69"
+            ]
+        ]
+    },
+    {
+        "id": "b1e90b23973f2f0e",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "🚨🔥 TEMP ALERT",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 500,
+        "wires": [
+            [
+                "e6891cc8ce856682",
+                "2e49bb7e080f1996",
+                "1db43a8ac25fd3ca"
+            ]
+        ]
+    },
+    {
+        "id": "44fede8f9782ae69",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "✅ Temperature OK",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 700,
+        "wires": [
+            [
+                "e6891cc8ce856682"
+            ]
+        ]
+    },
+    {
+        "id": "bfa4dca5e0552d5c",
+        "type": "ui-notification",
+        "z": "0f863836bc16a92a",
+        "ui": "9993c5289ce9cfa1",
+        "position": "top right",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 1720,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e6891cc8ce856682",
+        "type": "ui-text",
+        "z": "0f863836bc16a92a",
+        "group": "aefd102924566e2a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "state :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 750,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "2117101e94452a73",
+        "type": "mqtt in",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "topic": "hospital/operatingroom1/humidity",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "25d3f42b6b0a8dca",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 800,
+        "wires": [
+            [
+                "3115951e4de90278",
+                "9a3590aad228d3eb"
+            ]
+        ]
+    },
+    {
+        "id": "3115951e4de90278",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "",
+                "fromt": "str",
+                "to": "",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 800,
+        "wires": [
+            [
+                "bbdc207dbd6dbe2d",
+                "8aae1cbf40374359"
+            ]
+        ]
+    },
+    {
+        "id": "bbdc207dbd6dbe2d",
+        "type": "function",
+        "z": "0f863836bc16a92a",
+        "name": "function 2",
+        "func": "msg.hum = Number(msg.payload);     // keep real humidity\nmsg.payload = (msg.hum > 60);      // true/false\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 940,
+        "wires": [
+            [
+                "84741680d07ad59c"
+            ]
+        ]
+    },
+    {
+        "id": "84741680d07ad59c",
+        "type": "rbe",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 710,
+        "y": 940,
+        "wires": [
+            [
+                "56eef24d122433d1"
+            ]
+        ]
+    },
+    {
+        "id": "56eef24d122433d1",
+        "type": "switch",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 1100,
+        "wires": [
+            [
+                "7c6be7c52aaafd99"
+            ],
+            [
+                "057313dde8d5b7ed"
+            ]
+        ]
+    },
+    {
+        "id": "7c6be7c52aaafd99",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "🚨💧 HUMIDITY ALERT (>60%)",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 1060,
+        "wires": [
+            [
+                "9dd988fe52c958d3",
+                "2e49bb7e080f1996",
+                "1db43a8ac25fd3ca"
+            ]
+        ]
+    },
+    {
+        "id": "057313dde8d5b7ed",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "✅ 💧 HUMIDITY  OK",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 1160,
+        "wires": [
+            [
+                "9dd988fe52c958d3"
+            ]
+        ]
+    },
+    {
+        "id": "9dd988fe52c958d3",
+        "type": "ui-text",
+        "z": "0f863836bc16a92a",
+        "group": "488313863518a205",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "state :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 770,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "8aae1cbf40374359",
+        "type": "ui-gauge",
+        "z": "0f863836bc16a92a",
+        "name": "hum",
+        "group": "488313863518a205",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Humidity",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#001eff",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100 ",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 730,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "140e98dbb66fd68c",
+        "type": "mqtt in",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "topic": "hospital/operatingroom1/airquality",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "25d3f42b6b0a8dca",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 1300,
+        "wires": [
+            [
+                "6f7fe4c6e04fddea",
+                "d750eb96b8de138b"
+            ]
+        ]
+    },
+    {
+        "id": "6f7fe4c6e04fddea",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "",
+                "fromt": "str",
+                "to": "",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1300,
+        "wires": [
+            [
+                "6c65d379575d0164",
+                "c63167f9f289f198"
+            ]
+        ]
+    },
+    {
+        "id": "6c65d379575d0164",
+        "type": "function",
+        "z": "0f863836bc16a92a",
+        "name": "function 3",
+        "func": "const air = Number(msg.payload);\nconst TH = 2000;   \n\nmsg.air = air;\nmsg.payload = (air > TH); \n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1440,
+        "wires": [
+            [
+                "e34224f5f46060b7"
+            ]
+        ]
+    },
+    {
+        "id": "e34224f5f46060b7",
+        "type": "rbe",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 750,
+        "y": 1440,
+        "wires": [
+            [
+                "b8aa12f21a1f7495"
+            ]
+        ]
+    },
+    {
+        "id": "b8aa12f21a1f7495",
+        "type": "switch",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 430,
+        "y": 1600,
+        "wires": [
+            [
+                "2796bfa0d6d0723b"
+            ],
+            [
+                "77260caebd5d2142"
+            ]
+        ]
+    },
+    {
+        "id": "2796bfa0d6d0723b",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "🔴 AIR DANGER",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 1560,
+        "wires": [
+            [
+                "5c3554e64aa18efd",
+                "2e49bb7e080f1996",
+                "1db43a8ac25fd3ca"
+            ]
+        ]
+    },
+    {
+        "id": "77260caebd5d2142",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "🟢 Air OK",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 1660,
+        "wires": [
+            [
+                "5c3554e64aa18efd"
+            ]
+        ]
+    },
+    {
+        "id": "5c3554e64aa18efd",
+        "type": "ui-text",
+        "z": "0f863836bc16a92a",
+        "group": "305355ac9e206cf0",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "state :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 810,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "c63167f9f289f198",
+        "type": "ui-gauge",
+        "z": "0f863836bc16a92a",
+        "name": "air",
+        "group": "305355ac9e206cf0",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Air quality",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": " raw",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ff7300",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "2000",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 770,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e49bb7e080f1996",
+        "type": "delay",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "3",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1460,
+        "y": 1300,
+        "wires": [
+            [
+                "bfa4dca5e0552d5c"
+            ]
+        ]
+    },
+    {
+        "id": "bc116c5e2e9255d6",
+        "type": "ui-switch",
+        "z": "0f863836bc16a92a",
+        "name": "Surgery Mode",
+        "label": "switch",
+        "group": "8c2299cc30abccef",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 460,
+        "y": 1860,
+        "wires": [
+            [
+                "12880fcd7f16faf0"
+            ]
+        ]
+    },
+    {
+        "id": "12880fcd7f16faf0",
+        "type": "function",
+        "z": "0f863836bc16a92a",
+        "name": "function 4",
+        "func": "flow.set(\"surgeryMode\", msg.payload === true);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 1860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6385526827e65236",
+        "type": "mqtt in",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "topic": "hospital/operatingroom1/motion",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "25d3f42b6b0a8dca",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 1920,
+        "wires": [
+            [
+                "d183cf6ec4f4b6fe"
+            ]
+        ]
+    },
+    {
+        "id": "d183cf6ec4f4b6fe",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "",
+                "fromt": "str",
+                "to": "",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 1920,
+        "wires": [
+            [
+                "f1d390acef3419ce"
+            ]
+        ]
+    },
+    {
+        "id": "f1d390acef3419ce",
+        "type": "function",
+        "z": "0f863836bc16a92a",
+        "name": "function 5",
+        "func": "const motion = Number(msg.payload);          // 0 or 1\nconst surgeryMode = flow.get(\"surgeryMode\") || false;\n\nmsg.payload = (surgeryMode && motion === 1); // true/false (should alert)\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 2020,
+        "wires": [
+            [
+                "d854ce1b30e6c030"
+            ]
+        ]
+    },
+    {
+        "id": "d854ce1b30e6c030",
+        "type": "rbe",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 710,
+        "y": 2020,
+        "wires": [
+            [
+                "ca695422e0f401f4"
+            ]
+        ]
+    },
+    {
+        "id": "ca695422e0f401f4",
+        "type": "switch",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 570,
+        "y": 2120,
+        "wires": [
+            [
+                "4c97f3afd46b4344"
+            ],
+            [
+                "b398754bcc149ef8"
+            ]
+        ]
+    },
+    {
+        "id": "4c97f3afd46b4344",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "🚨 SECURITY ALERT: motion during surgery",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 2080,
+        "wires": [
+            [
+                "1d95965ef95111b7",
+                "1db43a8ac25fd3ca"
+            ]
+        ]
+    },
+    {
+        "id": "b398754bcc149ef8",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "✅ Motion OK ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 2180,
+        "wires": [
+            [
+                "1d95965ef95111b7"
+            ]
+        ]
+    },
+    {
+        "id": "1d95965ef95111b7",
+        "type": "ui-text",
+        "z": "0f863836bc16a92a",
+        "group": "8c2299cc30abccef",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "state :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 950,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "1db43a8ac25fd3ca",
+        "type": "link out",
+        "z": "0f863836bc16a92a",
+        "name": "link out ALERT_EVENTS",
+        "mode": "link",
+        "links": [
+            "cdab1612a2ffe230"
+        ],
+        "x": 1405,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "cdab1612a2ffe230",
+        "type": "link in",
+        "z": "0f863836bc16a92a",
+        "name": "ALERT_EVENTS",
+        "links": [
+            "1db43a8ac25fd3ca"
+        ],
+        "x": 1595,
+        "y": 1420,
+        "wires": [
+            [
+                "331ce9107e9d47c6"
+            ]
+        ]
+    },
+    {
+        "id": "331ce9107e9d47c6",
+        "type": "function",
+        "z": "0f863836bc16a92a",
+        "name": "build history",
+        "func": "const ts = new Date().toISOString();\n\nmsg.event = {\n  ts,\n  topic: msg.topic,\n  message: msg.payload,\n};\n\nmsg.payload = JSON.stringify(msg.event);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1750,
+        "y": 1420,
+        "wires": [
+            [
+                "3d8624599dd2ea60",
+                "9caa58bd5920d4d3"
+            ]
+        ]
+    },
+    {
+        "id": "3d8624599dd2ea60",
+        "type": "file",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "filename": "/home/mohamedamine/events_or1.jsonl",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 2000,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9caa58bd5920d4d3",
+        "type": "function",
+        "z": "0f863836bc16a92a",
+        "name": "push history",
+        "func": "const list = flow.get(\"history\") || [];\nlist.unshift(msg.event);                 // add newest first\nflow.set(\"history\", list.slice(0, 20));  // keep last 20\n\nmsg.payload = flow.get(\"history\")\n    .map(e => `${e.ts} | ${e.topic} | ${e.message}`)\n    .join(\"\\n\");\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1910,
+        "y": 1500,
+        "wires": [
+            [
+                "c53eca297eb68b21"
+            ]
+        ]
+    },
+    {
+        "id": "c53eca297eb68b21",
+        "type": "ui-text",
+        "z": "0f863836bc16a92a",
+        "group": "2c11081a4dd36c14",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "History (last 20 events)",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "10",
+        "color": "#000000",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 2140,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "8ca3a8e1cf0649dc",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "",
+                "fromt": "str",
+                "to": "",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 180,
+        "wires": [
+            [
+                "253e75a5bf5c4b4d",
+                "8726f3c523630e70"
+            ]
+        ]
+    },
+    {
+        "id": "253e75a5bf5c4b4d",
+        "type": "ui-chart",
+        "z": "0f863836bc16a92a",
+        "group": "aefd102924566e2a",
+        "name": "",
+        "label": "Temp (°C)",
+        "order": 9007199254740991,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 860,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a3590aad228d3eb",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "",
+                "fromt": "str",
+                "to": "",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 220,
+        "y": 880,
+        "wires": [
+            [
+                "c4ac46f111e2b3b4"
+            ]
+        ]
+    },
+    {
+        "id": "c4ac46f111e2b3b4",
+        "type": "ui-chart",
+        "z": "0f863836bc16a92a",
+        "group": "488313863518a205",
+        "name": "Humidity %",
+        "label": "Humidity %",
+        "order": 9007199254740991,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 270,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32814894a6a27048",
+        "type": "debug",
+        "z": "0f863836bc16a92a",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 80,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "d750eb96b8de138b",
+        "type": "change",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "",
+                "fromt": "str",
+                "to": "",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 240,
+        "y": 1380,
+        "wires": [
+            [
+                "1c10c502d0fc3395",
+                "3f14c49159043dd4"
+            ]
+        ]
+    },
+    {
+        "id": "1c10c502d0fc3395",
+        "type": "ui-chart",
+        "z": "0f863836bc16a92a",
+        "group": "305355ac9e206cf0",
+        "name": "Air quality",
+        "label": "Air quality",
+        "order": 9007199254740991,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 250,
+        "y": 1480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f14c49159043dd4",
+        "type": "debug",
+        "z": "0f863836bc16a92a",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 160,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "619dce12514c7d7d",
+        "type": "ui-button",
+        "z": "0f863836bc16a92a",
+        "group": "2c11081a4dd36c14",
+        "name": "",
+        "label": "reset",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 1870,
+        "y": 1640,
+        "wires": [
+            [
+                "e53a7174ee406901"
+            ]
+        ]
+    },
+    {
+        "id": "e53a7174ee406901",
+        "type": "function",
+        "z": "0f863836bc16a92a",
+        "name": "reset fun",
+        "func": "flow.set(\"history\", []);\nconst msgHistory = { payload: \"\" };\n\nreturn msgHistory;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1960,
+        "y": 1580,
+        "wires": [
+            [
+                "c53eca297eb68b21"
+            ]
+        ]
+    },
+    {
+        "id": "30d95a2365b3f2cb",
+        "type": "function",
+        "z": "0f863836bc16a92a",
+        "name": "PREDICT TEMP TREND",
+        "func": "const temp = Number(msg.payload);\n// keep last 5 readings\nlet arr = context.get(\"temps\") || [];\narr.push(temp);\nif (arr.length > 5) arr.shift();\ncontext.set(\"temps\", arr);\n\n// rule: last 5 are increasing AND total rise >= 0.8°C\nlet rising = false;\nif (arr.length === 5) {\n    const increasing = arr[1] > arr[0] && arr[2] > arr[1] && arr[3] > arr[2] && arr[4] > arr[3];\n    const totalRise = arr[4] - arr[0];\n    rising = increasing && totalRise >= 0.8;\n}\nmsg.payload = rising; // true/false for the next nodes\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 400,
+        "wires": [
+            [
+                "2be40c4e313807d5"
+            ]
+        ]
+    },
+    {
+        "id": "2be40c4e313807d5",
+        "type": "rbe",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 210,
+        "y": 480,
+        "wires": [
+            [
+                "90f2015e7a269174"
+            ]
+        ]
+    },
+    {
+        "id": "90f2015e7a269174",
+        "type": "switch",
+        "z": "0f863836bc16a92a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 130,
+        "y": 600,
+        "wires": [
+            [
+                "b1e90b23973f2f0e"
+            ],
+            [
+                "44fede8f9782ae69"
+            ]
+        ]
+    },
+    {
+        "id": "be0f2f4a9a611e4e",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2"
+        }
+    }
+]
